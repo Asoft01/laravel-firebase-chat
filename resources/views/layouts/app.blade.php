@@ -19,6 +19,26 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAS5Foz9KBbCHs3ycSw3VxfGZSmWxk7tUg",
+      authDomain: "my-tutorials-b31a3.firebaseapp.com",
+      projectId: "my-tutorials-b31a3",
+      storageBucket: "my-tutorials-b31a3.appspot.com",
+      messagingSenderId: "138418888689",
+      appId: "1:138418888689:web:1bcd57d84d1800109e6e50"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -76,5 +96,7 @@
             @yield('content')
         </main>
     </div>
+
+    @yield('scripts')
 </body>
 </html>

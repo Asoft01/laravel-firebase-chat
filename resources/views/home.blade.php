@@ -21,3 +21,11 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+    <script>
+        const messaging = getMessaging();
+        // Add the public key generated from the console here.
+        messaging.getToken({vapidKey: "AAAAIDpon_E:APA91bHY8KiInn3Xwx9Nvzp_3fjrCfsyQwMonlS6m7M2PCmCVBiTpOViLKa2HIWiRm3fX5NUClu7m0KiO9GAW9IAAlDapFgd16gH6hdWhZEkzzLmXelxSty6X8I98FUgfGlwNhWTsRRU"});
+    </script>
+@endsection
