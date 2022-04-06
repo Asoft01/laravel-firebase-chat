@@ -20,9 +20,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
+{{-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script> --}}
+<!-- Firebase -->
 <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getMessaging } from "firebase/messaging/sw";
+
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
@@ -39,6 +43,8 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
